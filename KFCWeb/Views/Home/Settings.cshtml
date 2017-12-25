@@ -1,0 +1,74 @@
+﻿@model SettingsViewModel
+
+<h3>Создать WebHook</h3>
+<form method="post" asp-controller="Home" asp-action="Settings">
+    
+    <div class="settings-container">
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">Имя сервиса</span>
+            </div>
+            <div class="right-content">
+                <select asp-for="ServiceName" asp-items="Model.Services"></select> 
+@**@
+@*                <select>*@
+@*                    <option>Jira</option>*@
+@*                    <option>Trello</option>*@
+@*                </select>*@
+            </div>
+        </div>
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">BugTracker URL</span>
+            </div>
+            <div class="right-content">
+                <input asp-for="BugTrackerUrl"/>
+            </div>
+        </div>
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">WebHook URL</span>
+            </div>
+            <div class="right-content">
+                <input asp-for="WebhookUrl"/>
+            </div>
+        </div>
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">Login</span>
+            </div>
+            <div class="right-content">
+                <input asp-for="Login"/>
+            </div>
+        </div>
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">Password</span>
+            </div>
+            <div class="right-content">
+                <input asp-for="Password"/>
+            </div>
+        </div>
+
+        <div class="settings-row">   
+            <div class="left-content">
+                <span class="text-content">Events</span>
+            </div>
+            <div class="right-content">
+
+            @for (int i=0; i<Model.Events.Length; i++)
+            {
+                <div>
+                    <input type="hidden" asp-for="@Model.Events[i].EventName"/>
+                    <input asp-for="@Model.Events[i].IsChecked" type="checkbox"/>
+                    <label >@Model.Events[i].EventName</label>
+                </div>
+            }
+
+            </div>
+        </div>
+        <div>
+            <button >Create</button>
+        </div>
+    </div>
+</form>

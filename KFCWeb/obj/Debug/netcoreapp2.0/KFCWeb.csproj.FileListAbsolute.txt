@@ -1,0 +1,10 @@
+D:\Projects\KFC\KFCWeb\KFCWeb\bin\Debug\netcoreapp2.0\KFCWeb.deps.json
+D:\Projects\KFC\KFCWeb\KFCWeb\bin\Debug\netcoreapp2.0\KFCWeb.runtimeconfig.json
+D:\Projects\KFC\KFCWeb\KFCWeb\bin\Debug\netcoreapp2.0\KFCWeb.runtimeconfig.dev.json
+D:\Projects\KFC\KFCWeb\KFCWeb\bin\Debug\netcoreapp2.0\KFCWeb.dll
+D:\Projects\KFC\KFCWeb\KFCWeb\bin\Debug\netcoreapp2.0\KFCWeb.pdb
+D:\Projects\KFC\KFCWeb\KFCWeb\obj\Debug\netcoreapp2.0\KFCWeb.csproj.CoreCompileInputs.cache
+D:\Projects\KFC\KFCWeb\KFCWeb\obj\Debug\netcoreapp2.0\KFCWeb.AssemblyInfoInputs.cache
+D:\Projects\KFC\KFCWeb\KFCWeb\obj\Debug\netcoreapp2.0\KFCWeb.AssemblyInfo.cs
+D:\Projects\KFC\KFCWeb\KFCWeb\obj\Debug\netcoreapp2.0\KFCWeb.dll
+D:\Projects\KFC\KFCWeb\KFCWeb\obj\Debug\netcoreapp2.0\KFCWeb.pdb

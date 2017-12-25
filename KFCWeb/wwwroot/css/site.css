@@ -1,0 +1,151 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.img-header{
+    width:200px;
+}
+.header-container, .menu-icon, .menu-header{
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon{
+    width:15%;
+}
+
+.menu-header{
+    width:85%;
+}
+
+.header-item{
+    width:10%;
+}
+
+.row-header{
+    padding-top: 10px;
+    background-color: #f1f1f1;
+}
+.row-header-content{
+    margin-top: 25px;
+    width: 100%;
+    font-size: 13px;
+    color: #b8b8b8;
+    letter-spacing: .76px;
+    border-width: 2px 0;
+    padding: 7px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 26px;
+    border-style: solid;
+    border-color: #CDD0D4;
+    -webkit-box-align: center;
+}
+.row-body-content{
+    font-weight: 700;
+    color: #596e81;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: .76px;
+    padding: 7px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 26px;
+    border: 0 solid #CDD0D4;
+    border-bottom-width: 1px;
+}
+
+.hidden-row{
+    display:none;
+    background-color:#F1F2D1;
+}
+
+.row-body-content:hover{
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.row-header-main{
+    text-align:center;
+    width:100%;
+    font-size:20px;
+}
+
+.header-item a{
+    text-decoration: none;
+    color:grey;
+    font-size:25px
+}
+
+.settings-row{
+    display:flex;
+    padding-bottom:10px;
+}
+
+
+.settings-row .left-content{
+    width:15%
+}
+
+.systemname-col{
+    width:6%;
+}
+
+.projectId-col{
+    width:10%;
+}
+.id-col{
+    width:10%;
+}
+
+.name-col {
+    width: 10%;
+}
+
+.status-col{
+    width:8%;
+}
+
+.creation-col, .updated-col{
+    width:15%;
+}
+
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

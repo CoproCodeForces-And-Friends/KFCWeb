@@ -1,0 +1,114 @@
+﻿@model KFCIssueCollection
+
+<div class="row-header">
+    <div class="row-header-content">
+@*        <div class="row-header-main"> *@
+@*            <span class="row-header-text">Список задач</span>*@
+@*        </div>*@
+        <div class="systemname-col column">
+            <span>Система</span>
+        </div>
+        <div class="projectId-col column">
+            <span>ID Проекта</span>
+        </div>
+        <div class="id-col column">
+            <span>ID задачи</span>
+        </div>
+        <div class="name-col column">
+            <span>Имя</span>
+        </div>
+        <div class="status-col column">
+            <span>Статус</span>
+        </div>
+        <div class="creation-col column">
+            <span>Дата создания</span>
+        </div>
+        <div class="updated-col column">
+            <span>Дата обновления</span>
+        </div>
+    </div>
+</div>
+@foreach (var issue in Model.Issues)
+{
+    <div class="row-body-content">
+        <div class="systemname-col column">
+            <span>@issue.SystemName</span>
+        </div>
+        <div class="projectId-col column">
+            <span>@issue.ProjectId</span>
+        </div>
+        <div class="id-col column">
+            <span>@issue.Id</span>
+        </div>
+        <div class="name-col column">
+            <span>@issue.Name</span>
+        </div>
+        <div class="status-col column">
+            <span>@issue.Status</span>
+        </div>
+        <div class="creation-col column">
+            <span>@issue.CreationDate</span>
+        </div>
+        <div class="updated-col column">
+            <span>@issue.UpdatedDate</span>
+        </div>
+    </div>
+    <div class="hidden-row">
+        <div>
+            <span>Id Создателя: </span>
+            <span>@issue.CreatorId</span>
+        </div>
+        <div>
+            <span>Id Исполнителя: </span>
+            <span>@issue.DeveloperId</span>
+        </div>
+        <div>
+            <span>Описание: </span>
+            <span>@issue.Description</span>
+        </div>
+    </div>
+
+@*    <div class="row">*@
+@*        <div>*@
+@*            <span>SystemName: </span>*@
+@*            <span></span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>ID: </span>*@
+@*            <span>@issue.Id</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>Name: </span>*@
+@*            <span>@issue.Name</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>Status: </span>*@
+@*            <span></span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>CreationDate: </span>*@
+@*            <span></span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>UpdatedDate: </span>*@
+@*            <span>@issue.UpdatedDate</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>CreatorId: </span>*@
+@*            <span>@issue.CreatorId</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>DeveloperId: </span>*@
+@*            <span>@issue.DeveloperId</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>ProjectId: </span>*@
+@*            <span>@issue.ProjectId</span>*@
+@*        </div>*@
+@*        <div>*@
+@*            <span>Description: </span>*@
+@*            <span>@issue.Description</span>*@
+@*        </div>*@
+@*       *@
+@*    </div> *@
+}
